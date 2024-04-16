@@ -1,0 +1,17 @@
+<aside>
+  <div class="sidebar-container">
+    <h1>Cookbook</h1>
+    <hr />
+    <% recipes.each do |recipe| %>
+      <article class="sidebar-list-recipe">
+        <h2><%= recipe[:name] %></h2>
+        <p><%= recipe[:description] %></p>
+      </article>
+      <hr />
+    <% end %>
+  </div>
+</aside>
+
+<div class="main-container">
+  <h1>Adam & Stephanie's Cookbook</h1>
+</div>

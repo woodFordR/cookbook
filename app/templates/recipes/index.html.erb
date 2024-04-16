@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>all the recipes</h1>
+  <hr />
+  <hr />
+  <section class="recipes-container">
+    <% recipes.each do |recipe| %>
+      <article>
+        <h2><%= recipe[:name] %></h2>
+        <hr />
+        <p><%= recipe[:description] %></p>
+        <hr />
+      </article>
+    <% end %>
+  </section>
+</div>
